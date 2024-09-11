@@ -98,7 +98,9 @@ function removeList(listID){
   console.log(listIndex);
   const updatedLists = allLists.filter((list) => list.id !== id);
   currentList === (allLists.find((x) => x.id === id)).title && setCurrentList(allLists[listIndex].title);
+  const updatedTodos = allTodos.filter((todo) => todo.listName !== (allLists.find((x) => x.id === id)).title);
   setAllLists(updatedLists);
+  setAllTodos(updatedTodos);
 
 }
 
