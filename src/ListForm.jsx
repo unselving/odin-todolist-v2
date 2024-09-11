@@ -29,15 +29,13 @@ function ListForm({addList, list}){
 
     return (
     <section>
-    {isActive ? (<form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
         <h4>Create New List</h4>
         <label htmlFor="title">Title </label>
         <input required name="title" value={info.title} onChange={handleInputChange}></input>
         <br/><button type="submit">Add</button>
         <button type="button" onClick={() => collapseForm()}>Close</button>
-        </form>) : (<button onClick={() => setIsActive(true)}>
-                    + Add New List
-                  </button>)}
+        </form>
 
     </section>
 
