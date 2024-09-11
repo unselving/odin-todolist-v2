@@ -34,7 +34,7 @@ function ListForm({addList, list}){
         <label htmlFor="title">Title </label>
         <input required name="title" value={info.title} onChange={handleInputChange}></input>
         <br/><button type="submit">Add</button>
-        <button type="button" onClick={() => setIsActive(false)}>Close</button>
+        <button type="button" onClick={() => collapseForm()}>Close</button>
         </form>) : (<button onClick={() => setIsActive(true)}>
                     + Add New List
                   </button>)}
