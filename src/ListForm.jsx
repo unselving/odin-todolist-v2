@@ -1,13 +1,10 @@
 import {v4 as uuidv4} from 'uuid';
 import { useState } from 'react'
 
-function ListForm({addList}){
+function ListForm({addList, list}){
 
     const [isActive, setIsActive] = useState(false);
-    const [info, setInfo] = useState({
-                                                        title: '',
-                                                        id:uuidv4()
-                                                    });
+    const [info, setInfo] = useState(list);
 
     const handleInputChange = (event) => {
         const name = event.target.name;

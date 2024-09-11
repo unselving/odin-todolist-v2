@@ -48,7 +48,7 @@ function TodoForm({todo, addTodo, allLists, currentList, removeTodoForm, collaps
             {allLists.map((list) => (<option value={list.title} key={list.id}>{list.title}</option>))}
             </select>
             <button type="submit">Add</button>
-            <button type="button" onClick={()=>collapseForm()}>Close</button>
+            <button type="button" onClick={()=>collapseForm()   }>Close</button>
         </form>
 
 )
