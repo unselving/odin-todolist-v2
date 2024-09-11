@@ -105,6 +105,8 @@ function removeList(listID){
 
 
   return (
+    <>
+    <title>Listomania</title>
     <div className="container">
       <div className="sidebar">
       <section id="sidebarTop">      
@@ -127,6 +129,8 @@ function removeList(listID){
       </div>
 
     </div>
+    </>
+    
   )
 }
 
