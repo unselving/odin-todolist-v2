@@ -1,7 +1,7 @@
 import {v4 as uuidv4} from 'uuid';
 import { useState } from 'react'
 
-function ListForm({addList, list}){
+function ListForm({addList, list, collapseForm}){
 
     const [isActive, setIsActive] = useState(false);
     const [info, setInfo] = useState(list);
