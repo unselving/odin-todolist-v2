@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 function ListForm({addList, list, collapseForm}){
 
-    const [isActive, setIsActive] = useState(false);
     const [info, setInfo] = useState(list);
 
     const handleInputChange = (event) => {
@@ -22,7 +21,7 @@ function ListForm({addList, list, collapseForm}){
             id: uuidv4(),
         });
         addList(info); // Pass the form data to the parent component
-        setIsActive(false);
+        collapseForm();
     };
 
 
